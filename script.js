@@ -30,3 +30,8 @@ function addItem() {
 }
 
 button.addEventListener('click', addItem);
+input.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        addItem();
+    }
+});
